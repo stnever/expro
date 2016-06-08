@@ -8,5 +8,14 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "debug": "^2.2.0"
+  },
+  "devDependencies": {
+    "bluebird": "^3.4.0",
+    "express": "^4.13.4",
+    "prequest": "github:stnever/prequest",
+    "supertest": "^1.2.0"
+  }
 }
