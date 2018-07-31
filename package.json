@@ -1,10 +1,10 @@
 {
   "name": "expro",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "main": "expro.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest ./test/express.test.js"
   },
   "keywords": [],
   "author": "",
@@ -15,7 +15,6 @@
   "devDependencies": {
     "bluebird": "^3.4.0",
     "express": "^4.13.4",
-    "prequest": "github:stnever/prequest",
-    "supertest": "^1.2.0"
+    "prequest": "github:stnever/prequest"
   }
 }
