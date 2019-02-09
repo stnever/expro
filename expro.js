@@ -38,7 +38,12 @@ function middleware(req, res, next) {
   if ( res.promise ) {
     debug('Found res.promise on %s %s', req.method, req.url)
     res.promise.then(value => {
-      res.json(value)
+      if ( typeof value === 'undefined' ) {
+        debug('res.promise resolved to undefined, will not touch response')
+      } else {
+        // NB: null vem aqui também
+        res.json(value)
+      }
     }).catch(err => {
       debug('Caught promise error', err)
       next(err)
